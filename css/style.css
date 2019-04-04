@@ -1,0 +1,340 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+/*Hamburger navigation menu and FPO menu included*/
+header {
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+#content {
+    background-color: #FFFFFF;
+    padding: 52px 10px 10px 10px;
+    position: relative;
+    width: auto;
+    height: 100%;
+    -webkit-box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+/*The hamburger button with a little gradient effect*/
+
+#hamburger {
+    border: 1px solid #374C77;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: inline-block;
+		float: left;
+    height: 24px;
+    padding: 3px 4px 3px;
+    position: relative;
+    width: 25px;
+    background: #4569b2;
+    background: -moz-linear-gradient(top, #4569b2 0%, #4062a5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4569b2), color-stop(100%, #4062a5));
+    background: -webkit-linear-gradient(top, #4569b2 0%, #4062a5 100%);
+    background: -o-linear-gradient(top, #4569b2 0%, #4062a5 100%);
+    background: -ms-linear-gradient(top, #4569b2 0%, #4062a5 100%);
+    background: linear-gradient(to bottom, #4569b2 0%, #4062a5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4569b2', endColorstr='#4062a5', GradientType=0);
+}
+
+
+/*The white stripes in the hamburger button*/
+
+#hamburger div {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 2px 2px 2px 2px;
+    height: 2px;
+    margin-top: 3px;
+    width: 90%;
+}
+
+
+/*Navigation menu for the hamburger button*/
+
+nav {
+    opacity: 0;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    z-index: 0;
+    width: 70%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #3e3c3d;
+    background: -moz-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e3c3d), color-stop(100%, #2d2c2d));
+    background: -webkit-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: -o-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: -ms-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
+    background: linear-gradient(to bottom, #3e3c3d 0%, #2d2c2d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e3c3d', endColorstr='#2d2c2d', GradientType=0);
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+nav li {
+    position: relative;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #222222;
+    border-top: 1px solid #444444;
+    padding: 15px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*FPO navigation menu included to be part of the hamburger button*/
+.navmenu {
+	overflow: hidden;
+	background-color:  white;
+}
+
+.navmenu a {
+	float: right;
+	display: block;
+	color: black;
+	font-family: "Arial Black";
+	text-align: center;
+	padding: 14px 35px;
+	text-decoration: none;
+}
+
+.navlink a {
+	font-family: "Arial Black";
+	font-size: 15px;
+	background-color: #bfbfbf;
+	/*padding: 8px;
+	padding-left: 20px;
+	padding-right: 20px;*/
+	padding: 14px 35px;
+	color: gray;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin-left: 50px;
+}
+
+/*The Layer that will be layed over the content
+so that the content is unclickable while menu is shown*/
+#contentLayer {
+    display: none;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    z-index: 5;
+}
+
+/*Big image as part of the home page*/
+.herosection {
+		background:linear-gradient(to right, black, white) ;
+		padding: 150px;
+
+}
+
+/*Part of hero section*/
+h1 {
+	font-family: "Arial Black";
+	font-size: 70px;
+	padding-left: 450px;
+	color: #2C3539;
+}
+
+/*Donate button as part of hero section*/
+.button {
+	background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+	font-family: "Arial Black";
+  cursor: pointer;
+	margin-left: 270px;
+}
+
+/*Part of hero section*/
+h2 {
+	font-style: "Arial Black";
+	font-size: 20px;
+	color: white;
+	margin-top: -70px;
+	margin-left: 270px;
+
+}
+
+/*Text of email landing page*/
+.landingpage {
+	font-family: "Arial Black";
+	text-align: center;
+	background-color: white;
+	padding: 90px;
+	margin-top: 20px;
+}
+
+/*Included on home page for the articles*/
+.wrapper {
+	background-color: : white;
+	padding: 90px;
+}
+
+/*Name of Articles*/
+h3 {
+	font-size: 25px;
+	margin-top: -70px;
+	margin-left: 90px;
+}
+
+h3 a {
+	text-decoration: none;
+	color: black;
+}
+
+/*For content blocks*/
+.column {
+  width: 33.33%;
+	margin-left: 100px;
+	float: left;
+	padding: 15px;
+	margin-bottom: 70px;
+	box-sizing: content-box;
+	border: 5px solid black;
+}
+
+/*Also part of content blocks*/
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.lowermid{
+  background-color: #bfbfbf;
+  padding: 70px;
+}
+
+
+h4 {
+	font-family: "Arial Black";
+	font-size: 19px;
+	color: black;
+	margin-top: -30px;
+}
+
+/*Buttons*/
+input[type=text] {
+  width: 45%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+
+/*Buttons*/
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 13px;
+	padding-left: 35px;
+	padding-right: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Buttons*/
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.footer {
+  background-color: #17202A;
+  padding: 110px;
+}
+
+/*FPO on footer*/
+h5{
+	font-style: "Arial Black";
+  font-size: 15px;
+	background-color: #bfbfbf;
+	padding: 15px;
+	width: 5%;
+	color: gray;
+	margin-top: -60px;
+	margin-left: 530px;
+	text-align: center;
+
+}
+
+/*Name of Disclaimer*/
+h6{
+	font-family: "Arial Black";
+	font-size: 35px;
+	color: black;
+}
+
+/*Text on footer*/
+.bottom {
+	width: 27%;
+	padding: 12px;
+  border: 2px solid white;
+	text-align: center;
+	color: white;
+  font-size: 12px;
+	margin-left: 410px;
+  padding: 10px;
+}
+
+/*Disclaimer link on footer*/
+a {
+	text-decoration: none;
+	color: #bfbfbf;
+	font-size: 18px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }

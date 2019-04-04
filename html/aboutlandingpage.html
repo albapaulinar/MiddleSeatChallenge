@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--Using jQuery and jQuery UI for display effects-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+    <!--Using the hamburger menu display code-->
+    <script src="../js/hamburger.js"></script>
+
+    <!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
+    <link rel="stylesheet" type="text/css" media="all" href="../css/style.css"/>
+</head>
+
+<body>
+<!--This wrapping container is used to get the width of the whole content-->
+<div id="container">
+
+    <header>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+				<div class="navmenu">
+				      <div class="navlink">
+					       <a href="codeexercise.html">FPO</a>
+				      </div>
+				         <a href="donatepage.html" target="_blank">
+					       <input type="submit" value="DONATE" style="float: right;">
+				         </a>
+				       	 <a href="aboutlandingpage.html">About</a>
+				</div>
+    </header>
+
+    <!--The mobile navigation Markup hidden via css-->
+    <nav>
+        <ul>
+          <li><a href="codeexercise.html">FPO</a></li>
+          <li><a href="aboutlandingpage.html">About</a></li>
+          <li><a href="donatepage.html" target=_"blank">Donate</a></li>
+          <li><a href="articlepage1.html">Why Should You Join?</a></li>
+          <li><a href="articlepage2.html">How Your Donation Helps</a></li>
+        </ul>
+    </nav>
+
+<!--The Layer that will be layed over the content
+    so that the content is unclickable while menu is shown-->
+    <div id="contentLayer"></div>
+
+      <div id="content">
+
+        <h6 align="center">About FPO</h6>
+          <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+          </article><br>
+
+
+      <div class="lowermid">
+
+        <a href="codeexercise.html">
+		    <input type="submit" value="Back to Home Page"/>
+	      </a>
+      </div>
+
+     <div class="footer">
+       <h5>FPO</h5>
+	     <div class="bottom">	Lorem ipsum dolor sit amet<br> Maecenas sit amet pretium urna.<br>
+	     <a href="disclaimer.html">Disclaimer</a>
+	    </div>
+     </div>
+
+   </div>
+
+
+</body>
+</html>
